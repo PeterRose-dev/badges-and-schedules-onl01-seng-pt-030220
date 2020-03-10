@@ -7,10 +7,10 @@ name = "Arel"
 badge_maker(name)
 
 def batch_badge_creator(attendees)
-    badges = []
-    attendees.collect do |names| badges << puts "Hello, my name is #{names}."
+    array = []
+    attendees.collect do |names| array << puts "Hello, my name is #{names}."
   end
-  badges
+  array
 end
 
 attendees = ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
