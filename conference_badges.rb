@@ -27,7 +27,7 @@ luminaries = ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
 assign_rooms(luminaries)
 
 def printer(attendees)
-    badge_list = []
+    
     attendees.collect do |names| puts  "Hello, my name is #{names}."
     
 end
