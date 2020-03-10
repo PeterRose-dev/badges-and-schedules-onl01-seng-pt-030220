@@ -30,7 +30,7 @@ luminaries = ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
 assign_rooms(luminaries)
 
 def printer(attendees)
-    batch_badge_creator(attendees)
+   attendees.collect do |names|   badges << "Hello, my name is #{names}."
     assign_rooms(luminaries)
 end
   
