@@ -31,3 +31,4 @@ def printer(attendees)
     luminaries.each_with_index do |names, i | room_assignments <<  "Hello, #{names}! You'll be assigned to room #{i+1}."
 end
   attendees = ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
+  
