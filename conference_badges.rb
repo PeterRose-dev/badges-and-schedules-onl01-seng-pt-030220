@@ -10,7 +10,6 @@ def batch_badge_creator(attendees)
 
     badges = []
      attendees.collect do |names|   badges << "Hello, my name is #{names}."
-
   end
   badges
 end
@@ -22,7 +21,7 @@ batch_badge_creator(attendees)
 
 def assign_rooms(luminaries)
     room_assignments = []
-    luminaries.each_with_index do |names, i | room_assignments << puts "Hello, #{names}! You'll be assigned to room #{i+1}."
+    luminaries.each_with_index do |names, i | room_assignments <<  "Hello, #{names}! You'll be assigned to room #{i+1}."
     end
   room_assignments
 end
