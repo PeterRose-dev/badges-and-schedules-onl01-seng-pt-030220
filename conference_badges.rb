@@ -27,8 +27,10 @@ luminaries = ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
 assign_rooms(luminaries)
 
 def printer(attendees)
-    attendees.collect do |names|   badges << "Hello, my name is #{names}."
-    luminaries.each_with_index do |names, i | room_assignments <<  "Hello, #{names}! You'll be assigned to room #{i+1}."
+    attendees.collect do |names|   "Hello, my name is #{names}."
+    attendees.each_with_index do |names, i | "Hello, #{names}! You'll be assigned to room #{i+1}."
+end
+end
 end
   attendees = ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
   
