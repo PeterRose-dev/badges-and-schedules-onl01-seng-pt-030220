@@ -7,14 +7,18 @@ name = "Arel"
 badge_maker(name)
 
 def batch_badge_creator(attendees)
-    array = []
-    attendees.collect do |names| array << puts "Hello, my name is #{names}."
+
+    badges = []
+     attendees.collect do |names|   badges << "Hello, my name is #{names}."
+
   end
-  array
+  badges
 end
+
 
 attendees = ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
 batch_badge_creator(attendees)
+
 
 def assign_rooms(luminaries)
     room_assignments = []
