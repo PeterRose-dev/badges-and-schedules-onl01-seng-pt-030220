@@ -16,24 +16,23 @@ end
 attendees = ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
 batch_badge_creator(attendees)
 
-def assign_rooms(luminaries)
+def assign_rooms(attendees)
     room_assignments = []
-    luminaries.collect do |names| room_assignments << "Hello, my name is #{names}."
-    end
-    luminaries.each_with_index do |names, i | room_assignments <<  "Hello, #{names}! You'll be assigned to room #{i+1}."
+    attendees.each_with_index do |names, i | room_assignments <<  "Hello, #{names}! You'll be assigned to room #{i+1}."
+   
   end
   room_assignments
 end
 
-luminaries = ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
-assign_rooms(luminaries)
+attendees = ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
+assign_rooms(attendees)
 
 def printer(attendees)
     
     attendees.collect do |names| puts  "Hello, my name is #{names}."
     
 end
-attendees.each_with_index do |names, i | puts "Hello, #{names}! You'll be assigned to room #{i+1}."
+attendees.each_with_index do |names, i | puts "Hello, #{names}! You'll be assigned to room #{i+1}!"
 end
 
 end
