@@ -28,12 +28,12 @@ assign_rooms(luminaries)
 
 def printer(attendees)
     badge_list = []
-    attendees.collect do |names| badge_list <<  "Hello, my name is #{names}."
+    attendees.collect do |names| puts  "Hello, my name is #{names}."
     
 end
-attendees.each_with_index do |names, i | badge_list << "Hello, #{names}! You'll be assigned to room #{i+1}."
+attendees.each_with_index do |names, i | puts "Hello, #{names}! You'll be assigned to room #{i+1}."
 end
-badge_list
+
 end
   attendees = ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
   printer(attendees)
